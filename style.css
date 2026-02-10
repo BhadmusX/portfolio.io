@@ -33,7 +33,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: flex-start;
     text-align: center;
-    font-size: clamp(1.4rem, 4vw, 3.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
 }
 .nav-links{
        padding: 10px;
@@ -44,6 +45,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        gap: 30px;
        justify-content: center;
        transition: 0.3s;
+       font-size: clamp(0.8rem, 3vw, 1.2rem);
 }
 .navbar-links:hover{
     color: #ab53e2;
@@ -212,7 +214,7 @@ footer {
 
 .contact-form input, 
 .contact-form textarea {
-    background-color: #bca0dc; /* Pale purple from your image */
+    background-color: #ab53e2; 
     border: none;
     padding: 1rem;
     border-radius: 8px;
@@ -226,7 +228,7 @@ footer {
 }
 
 .send-btn {
-    background-color: #6200ea; /* Solid purple */
+    background-color: #6200ea; 
     color: white;
     padding: 1rem;
     border: none;
@@ -240,7 +242,7 @@ footer {
     opacity: 0.8;
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -253,52 +255,19 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stacks logo and links vertically */
+        flex-direction: column;
         padding: 1rem;
         text-align: center;
     }
 
     .nav-links {
         margin-top: 1rem;
-        gap: 1rem; /* Reduces space between links for smaller screens */
+        gap: 0.5rem; 
         justify-content: center;
-        flex-wrap: wrap; /* Allows links to wrap if there are many */
+        
     }
 
     .logo {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
-
-    .nav-links a {
-        font-size: 0.8rem; /* Slightly smaller text for mobile */
-    }
-}
-
-/* Logo Styling */
-.logo-container {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-logo {
-    width: 180px; /* Adjust size based on your preference */
-    height: auto;
-    filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.4)); /* Subtle purple glow */
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-/* Hover effect for a "futuristic" feel */
-.main-logo:hover {
-    transform: scale(1.05) rotate(2deg);
-    filter: drop-shadow(0 0 25px rgba(168, 85, 247, 0.8)); /* Intense glow on hover */
-}
-
-/* Ensure the navbar logo also looks consistent */
-.nav-bar .logo {
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #ab53e2;
 }
