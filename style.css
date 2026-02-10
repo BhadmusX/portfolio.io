@@ -28,13 +28,12 @@ background: rgba(11, 11, 13, 0.9);
 backdrop-filter: blur(10px);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.logo{
+.nav-bar .logo{
     color: #ab53e2;
     display: flex;
     justify-content: flex-start;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: clamp(1.4rem, 4vw, 3.5rem);
 }
 .nav-links{
        padding: 10px;
@@ -57,12 +56,11 @@ color: white;
 
 /**/
 .hero{
-height: 80vh;
+height: 70vh;
 display: flex;
 justify-content: center;
 align-items: center;
-text-align: center;
-padding: 0 10%;
+padding: 0 6%;
 }
 .intro{
     color: #3b0462;
@@ -70,10 +68,11 @@ padding: 0 10%;
 }
 .intro h1 {
     color: white;
-    font-size: 3.5rem;
+    font-size: clamp(1.6rem, 3vw, 3.5rem);
 }
 .intro h2{
     color: white;
+    font-size: clamp(1.6rem, 3vw, 3.3rem);
 }
 .intro p{
     color: #94a3b8;
@@ -298,9 +297,8 @@ footer {
 }
 
 /* Ensure the navbar logo also looks consistent */
-.navbar .logo {
+.nav-bar .logo {
     font-weight: bold;
     letter-spacing: 2px;
-    color: var(--primary-purple);
-    text-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+    color: #ab53e2;
 }
