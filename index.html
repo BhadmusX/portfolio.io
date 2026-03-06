@@ -12,7 +12,10 @@
     <div class="container">
     <div class="nav-bar" id="nav-bar">
         <div class="logo">X-Orbit</div>
-         <nav class="nav-links">
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+         <nav class="nav-links" id="nav-links">
                     <a href="#nav-bar" class="navbar-links">Home</a>
                     <a href="#about" class="navbar-links">About</a>
                     <a href="#project" class="navbar-links">Projects</a>
@@ -24,8 +27,8 @@
             <section class="hero">
                     <div class="intro">
                      <div class="logo-container">
-           
-        </div>   
+                    <img src="images/Screenshot 2026-02-06 130043.png"  class="pfp" alt="Profile picture">    
+                    </div>   
                         <h1 class="">Hi, I'm <span class="name">Alameen Bhadmus</span></h1>
                         <h2>Frontend Developer</h2>
                         <p>Crafting digital experiences with HTML, CSS, and JavaScript. Always pushing the edge of web development.</p>
@@ -91,6 +94,10 @@
                 <footer>
         <p>&copy; 2026 Sabr.Tech | Built with passion & persistence</p>
     </footer>
-     
+     <script>
+        function toggleMenu() {
+            document.getElementById('nav-links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
